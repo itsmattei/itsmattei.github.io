@@ -1,7 +1,7 @@
 twttr.widgets.createTimeline(
   {
     sourceType: "profile",
-    screenName: "itsMattei"
+    screenName: "itsmattei"
   },
   document.getElementById("container")
 );
