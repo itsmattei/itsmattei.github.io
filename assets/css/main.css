@@ -372,7 +372,9 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 736px) {
-
+	.timeline{
+			width: inherit;
+	}
 			h2 {
 				font-size: 1.1em;
 				line-height: 1.65em;
