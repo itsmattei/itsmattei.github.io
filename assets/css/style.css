@@ -1569,6 +1569,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     filter: grayscale(0);
   }
 
+  .avatar-box {
+    margin-top: -1%;
+  }
+
 }
 
 
