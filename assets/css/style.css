@@ -1544,10 +1544,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: var(--shadow-2);
     z-index: 1;
     scroll-snap-align: start;
-    min-width: 50%;
-    min-height: 50%;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
     background-color: var(--onyx);
   }
+
+  
 
    .service-affiliations img {
     width: 100%;
