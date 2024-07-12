@@ -161,6 +161,8 @@ article {
   display:inline;
 }
 
+#subtitles {color: var(--onyx);}
+
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
@@ -923,6 +925,12 @@ main {
   text-align: center;
 }
 
+.copyright ion-icon {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  display: inline-block;
+}
+
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
@@ -1550,7 +1558,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     align-items: center;
     background-color: var(--onyx);
   }
-
   
 
    .service-affiliations img {
