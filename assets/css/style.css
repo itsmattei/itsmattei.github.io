@@ -1531,7 +1531,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   ion-icon {
     color: var(--orange-yellow-crayola);
@@ -1545,7 +1545,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     z-index: 1;
     scroll-snap-align: start;
     width: 300px;
-    height: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     background-color: var(--onyx);
