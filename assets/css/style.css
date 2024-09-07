@@ -9,17 +9,19 @@
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(230, 100%, 20%);
-  --eerie-black-1: hsl(230, 100%, 20%);
-  --eerie-black-2: hsl(230,52%,55%);
-  --pop-mint: hsl(160, 60%, 60%);
+  --onyx: hsl(224, 51%, 33%);                                             /* Botton colors */
+  --eerie-black-1: hsl(194, 66%, 89%);
+  --eerie-black-2:hsl(192, 83%, 38%);                                    /* Background section */
+  --pop-mint:hsl(193, 100%, 33%);                                             /* Background color */
   --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
+  --white-2: hsl(0, 0%, 100%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(230, 100%, 20%);
   --light-gray: hsl(0, 0%, 90%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --wandering-river : hsl(205, 42%, 61%);
+  --blue-screen: hsl(207, 100%, 43%);
 
   /**
    * typography
