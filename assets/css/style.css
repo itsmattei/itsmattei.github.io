@@ -106,7 +106,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--savoia-blue); }
+body { background: var(--onyx); }
 
 .backvideo {
   position: fixed;
@@ -235,7 +235,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--light-blue);
+  background: var(--medium-blue);
   border-radius: 5px;
 }
 
