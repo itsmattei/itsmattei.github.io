@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M. Mastromattei</title>
-
-  <link rel="icon" type="image/x-icon" href="./assets/images/olive-tree.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/imgs/icons/Panzerotto.ico"/>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +14,9 @@
 </head>
 
 <body>
-
+  <video autoplay loop muted plays-inline class="backvideo">
+    <source src="./assets/imgs/background.mp4" type="video/mp4">
+  </video>
 
   <main>
     <!--- #SIDEBAR -->
@@ -31,7 +32,7 @@
         <div class="info-content">
           <h1 class="name" title="M. Mastromattei">Michele </br> Mastromattei</h1>
 
-          <p class="title">PhD candidate in AI</p>
+          <p class="title">AI Scientist</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -151,15 +152,9 @@
 
         <section class="about-text">
           <p>
-            Hi Folks! I'm Michele (but also known as Mike) : a PhD student in the first National Italian PhD program in <span class = "emphasis"> Artificial Intelligence </span> at Campus Bio‑Medico Univesity and the University of Rome Tor Vergata.
-          </br> I'm currently a research intern at <span class = "emphasis">NEC Laboratories Euope </span>(Lab: <i>Biological AI</i> )
-          </p>
-
-          <p>
-            In recent years, I was a visiting researcher at <span class = "emphasis">The University of Edinburgh</span>,
-            a <span class = "emphasis">research fellow</span> in “automatic image captioning for visual media contents”
-            and a <span class = "emphasis">postgraduate researcher</span> in “interpretability of neural network systems”.
-          </p>
+            Hi Folks! I'm Michele (but also known as Mike) : AI Scientist with a PhD in <span class = "emphasis">Artificial Intelligence</span> from the joint program at Campus Bio-Medico University and the University of Rome Tor Vergata. 
+          </br> </br>
+            My research experience focusing on AI applications in healthcare, safety, and more. I've developed <span class = "emphasis">generative AI models for virus prediction</span> at <i>NEC Laboratories Euope</i> (Lab: <i>Biological AI</i>), worked on <span class = "emphasis">XAI for health data</span> (<i>University of Edinburgh</i>), and research fellow in <span class = "emphasis">image captioning systems</span> and <span class = "emphasis">Explainable AI</span> (<i>University of Rome Tor Vergata</i>).
         </section>
 
         <section class="service">
@@ -242,19 +237,19 @@
 
             <li class="service-affiliations">
               <a href="https://www.unicampus.it/en/">
-                <img src="./assets/imgs/icons/Campus.png" alt="Campus">
+                <img src="./assets/imgs/frames/Campus.jpg" alt="Campus">
               </a>
             </li>
 
             <li class="service-affiliations">
               <a href="https://neclab.eu/">
-                <img src="./assets/imgs/icons/NEC_logo.png" alt="NEC">
+                <img src="./assets/imgs/frames/NEC.png" alt="NEC">
               </a>
             </li>
 
             <li class="service-affiliations">
               <a href="https://web.uniroma2.it/en">
-                <img src="./assets/imgs/icons/TV.png" alt="Tor Vergata">
+                <img src="./assets/imgs/frames/Tor_vergata.png" alt="Tor Vergata">
               </a>
             </li>
 
@@ -270,6 +265,91 @@
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="sparkles-outline"></ion-icon>
+            </div>
+
+        <h3 class="h3" id="subtitles">Work experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">AI Scientist Consultant</h4>
+              <p class="title-position">NEC Laboratories Europe
+                <span>11/2024 - 02/2025</span>
+              </p>
+              <p class="timeline-text">
+                - Generative AI virus evolutionary trajectories</br>
+                - Harmonizing virus evolution through parallel machine learning models processing
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Intern</h4>
+              <p class="title-position">NEC Laboratories Europe
+                <span>04/2024 - 09/2024</span>
+              </p>
+              <p class="timeline-text">
+                Research Intern at NEC Laboratories Europe, within the Biological AI Group. The project aimed to predict and generate new variants of Covid-19 by leveraging the natural evolution of the virus and applying advanced Artificial Intelligence technologies. </br>
+              We developed a Machine Learning model that incorporated the biological composition of the virus, implementing it into a system capable of recognizing both the virus and its family lineage. Statistical tools were also integrated to enhance the accuracy and predictive power of the model.
+            </br><em>TOPICS</em></br>
+              - Generative AI models for virus sequences generation </br>
+              - Reinforcement learning development models for improved virus outbreak prediction
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Visiting Researcher Student</h4>
+              <p class="title-position">The University of Edinburgh
+                <span>01/2023 - 07/2023</span>
+              </p>
+              <p class="timeline-text">
+                Visiting researcher at the University of Edinburgh's Informatics Forum under the guidance of Dr. Ajitha Rajan. </br>
+                I contributed to the Horizon 2020 European Project – KATY (Knowledge At the Tip of Your Fingers), focusing on developing AI models for ccRCC (clear cell renal cell carcinoma) prediction. My work involved designing and implementing machine learning training corpora using datasets derived from real human genome sequences.</br>
+                I developed specialized algorithms to generate these corpora, which included artificial, non-biological proteins and peptides used for machine learning model training. The final distribution of the generated synthetic proteins and peptides closely matched that of the original biological data, ensuring high fidelity to real-world conditions. The generated corpora varied in size, ranging from a few megabytes to several gigabytes.</br>
+                Additionally, by comparing our results with various benchmark datasets used for training multiple machine learning models, we observed that each generated version exhibited increasingly precise characteristics in both training and test corpora. This refinement improved the overall robustness and accuracy of the models.</br>
+                I also explored explainability (XAI) models and compositional semantics to enhance model interpretability, ensuring greater transparency in AI-driven predictions.
+              </br><em>TOPICS</em></br>
+              - Research on Explainable AI and Compositional Semantic Algorithms for ccRCC (clear cell Renal Cell Carcinoma) genome sequences
+              - Corpora generation based on real human genome data
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research fellow</h4>
+              <p class="title-position"> The University of Rome Tor Vergata
+                <span>01/2021 - 11/2021</span>
+              </p>
+              <p class="timeline-text">
+              First-Class Research Fellow in the project "Automatic Image Captioning for Visual Media Content" at the Department of Enterprise Engineering "Mario Lucertini", University of Rome Tor Vergata. </br>
+              My work was part of the SFIdA NoW project ("Design and Model Systems for the Training and Information of Operators and Users in Non-Wild Environments"), a collaboration between the University of Rome Tor Vergata and the University of Cassino and Southern Lazio.</br>
+              The project was funded by INAIL (Istituto Nazionale Assicurazione Infortuni sul Lavoro), Italy’s national institute for workplace accident insurance.</br>
+              The project aimed to develop an AI model capable of analyzing outdoor sports images collected from social media. Given an image as input, the model assessed safety levels by detecting the presence of personal protective equipment (PPE) and, where applicable, identifying the type of equipment used.
+            </br><em>TOPICS</em></br>
+            - Image Captioning for Visual Media Contents Research </br>
+            - Image Classification algorithms
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Postgraduate Researcher</h4>
+              <p class="title-position">The University of Rome Tor Vergata
+                <span>11/2020 - 01/2020</span>
+              </p>
+              <p class="timeline-text">
+              Postgraduate Researcher in “Interpretability of Neural Network Systems” at the Department of Enterprise Engineering "Mario Lucertini", University of Rome Tor Vergata, in collaboration with AlmaWave, an Italian company specialized in Artificial Intelligence and Natural Language Processing.</br>
+              The goal of the project was to develop a Conversational Designer (Chatbot) trained on both known datasets and real-world conversations. The objective was to extract valuable information from these conversations and use it as additional knowledge during the training phase of the model, enhancing its performance and improving its ability to interact in a more human-like and accurate manner.
+            </br><em>TOPICS</em></br>
+            - Interpretability of Neural Network Systems </br>
+            - Injecting External Knowledge in Conversational AI models
+              </p>
+            </li>
+          </ol>
+
+        </section>
 
         <section class="timeline">
 
@@ -322,62 +402,6 @@
               </p>
             </li>
 
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="sparkles-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3" id="subtitles">Work experience</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Research Intern</h4>
-              <p class="title-position">NEC Laboratories Europe
-                <span>04/2024 - 09/2024</span>
-              </p>
-              <p class="timeline-text">
-                - Development generative AI models to predict novel virus sequences </br>
-                - Build/Train reinforcement learning models for improved virus outbreak prediction
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Visiting Researcher Student</h4>
-              <p class="title-position">The University of Edinburgh
-                <span>01/2023 - 07/2023</span>
-              </p>
-              <p class="timeline-text">
-                - Fundamental research in Explainability AI models and Compositional Semantic Algorithms for ccRCC (clear cell Renal Cell Carcinoma) genome sequences </br>
-                - Corpora generation based on real human‑genome sequences
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Research fellow</h4>
-              <p class="title-position"> The University of Rome Tor Vergata
-                <span>01/2021 - 11/2021</span>
-              </p>
-              <p class="timeline-text">
-                Image Captioning for Visual Media Contents Research
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Postgraduate Researcher</h4>
-              <p class="title-position">The University of Rome Tor Vergata
-                <span>11/2020 - 01/2020</span>
-              </p>
-              <p class="timeline-text">
-                - Interpretability of Neural Network Systems </br>
-                - Injecting External Knowledge in Conversational AI models
-              </p>
-            </li>
           </ol>
 
         </section>
