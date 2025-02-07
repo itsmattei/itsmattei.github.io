@@ -8,21 +8,13 @@
 
   /* solid */
 
-
+  --dark-black: hsl(0, 0%, 7%);
   --onyx: hsl(240, 1%, 17%);
-  --text-blue:  hsla(0, 0%, 84%, 0.7);
-  --medium-blue:hsl(0, 0%, 7%);
   --savoia-blue: #6397d0;
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 100%);
   --light-blue: #48bfe3;
-  --light-gray: hsl(0, 0%, 90%);
-
-
-  /**
- --eerie-black-1: hsl(194, 66%, 89%);
- --light-gray-70: hsla(0, 0%, 84%, 0.7);
-   */
+  --light-gray:  hsla(0, 0%, 84%, 0.7);
+  --dirty-white: hsl(0, 0%, 90%);
+  --white-1: hsl(0, 0%, 100%);
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
@@ -128,7 +120,7 @@ body { background: var(--onyx); }
 
 .sidebar,
 article {
-  background: var(--medium-blue);
+  background: var(--dark-black);
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -200,7 +192,7 @@ article.active {
 .h3 { font-size: var(--fs-2);
   color: var(--light-blue); }
 
-.h4 { color: var(--white-2);
+.h4 { color: var(--white-1);
   font-size: var(--fs-4); }
 
 .h5 {
@@ -235,7 +227,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--medium-blue);
+  background: var(--dark-black);
   border-radius: 5px;
 }
 
@@ -308,7 +300,7 @@ main {
 .avatar-box img { object-fit: cover; }
 
 .info-content .name {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
@@ -391,7 +383,7 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-7);
 }
 
@@ -407,12 +399,12 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--dirty-white-70);
   font-size: 18px;
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover { color: var(--dirty-white); }
 
 
 
@@ -443,14 +435,14 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--dirty-white-70); }
 
 .navbar-link.active { color: var(--light-blue); }
 
@@ -541,7 +533,7 @@ main {
 .service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
@@ -588,7 +580,7 @@ main {
 .testimonials-item-title { margin-bottom: 7px; }
 
 .testimonials-text {
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -648,7 +640,7 @@ main {
 }
 
 .testimonials-modal {
-  background: var(--medium-blue);
+  background: var(--dark-black);
   position: relative;
   padding: 15px;
   margin: 15px 12px;
@@ -677,7 +669,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: 18px;
   opacity: 0.7;
 }
@@ -701,13 +693,13 @@ main {
 
 .modal-content time {
   font-size: var(--fs-6);
-  color: var(--light-gray-70);
+  color: var(--dirty-white-70);
   font-weight: var(--fw-300);
   margin-bottom: 10px;
 }
 
 .modal-content p {
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -789,7 +781,7 @@ main {
 }
 
 .title-position {
-  color: var(--white-2);
+  color: var(--white-1);
   line-height: 1.6;
   font-style: italic;
   display: flex;
@@ -805,7 +797,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--white-2);
+  color: var(--white-1);
   text-align: left;
   font-style: italic;
 }
@@ -833,7 +825,7 @@ main {
 }
 
 .timeline-text {
-  color: var(--text-blue);
+  color: var(--light-gray);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -857,7 +849,7 @@ main {
 }
 
 .skill .title-wrapper data {
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
 }
@@ -892,7 +884,7 @@ main {
 
 .filter-select {
   background: var(--onyx);
-  color: var(--light-gray);
+  color: var(--dirty-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -929,7 +921,7 @@ main {
 
 .select-item button {
   background: var(--onyx);
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
@@ -944,18 +936,18 @@ main {
 }
 
 .copyright p{
-  color: var(--light-gray-70);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   text-align: center;
 }
 
 .copyright ion-icon {
-  color: var(--light-gray-70);
+  color: var(--light-gray);
   font-size: var(--fs-6);
   display: inline-block;
 }
 
-.select-item button:hover { --medium-blue: hsl(240, 2%, 20%); }
+.select-item button:hover { --dark-black: hsl(240, 2%, 20%); }
 
 .project-list {
   display: grid;
@@ -1038,7 +1030,7 @@ main {
 .project-category { margin-left: 10px; }
 
 .project-title {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-5);
   font-weight: var(--fw-400);
   text-transform: capitalize;
@@ -1111,13 +1103,13 @@ main {
 }
 
 .blog-meta :is(.blog-category, time) {
-  color: var(--light-gray-70);
+  color: var(--dirty-white-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
 .blog-meta .dot {
-  background: var(--light-gray-70);
+  background: var(--dirty-white-70);
   width: 4px;
   height: 4px;
   border-radius: 4px;
@@ -1132,7 +1124,7 @@ main {
 .blog-post-item > a:hover .blog-item-title { color: var(--light-blue); }
 
 .blog-text {
-  color: var(--light-gray);
+  color: var(--dirty-white);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1177,7 +1169,7 @@ main {
 }
 
 .form-input {
-  color: var(--white-2);
+  color: var(--white-1);
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
@@ -1677,12 +1669,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .filter-item button {
-    color: var(--light-gray);
+    color: var(--dirty-white);
     font-size: var(--fs-5);
     transition: var(--transition-1);
   }
 
-  .filter-item button:hover { color: var(--light-gray-70); }
+  .filter-item button:hover { color: var(--dirty-white-70); }
 
   .filter-item button.active { color: var(--light-blue); }
 
