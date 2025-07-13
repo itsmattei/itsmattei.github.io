@@ -710,39 +710,52 @@ main {
  * #clients
  */
 
-.clients { margin-bottom: 15px; }
+/* Definiamo l'animazione di scorrimento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Muove il contenitore verso sinistra della sua metà esatta */
+    transform: translateX(-50%);
+  }
+}
 
+.clients {
+    margin-bottom: 15px;
+}
+
+/* Nuovo contenitore per la lista che avrà la maschera */
+.clients-list-wrapper {
+    overflow: hidden; /* Importante per contenere la maschera */
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+}
+
+/* La lista che scorre (ul) */
 .clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
 }
 
 .clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10%;
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-.clients-item img:hover { filter: grayscale(0); }
-
-
-
-
+.clients-item:hover img {
+    filter: grayscale(100%);
+}
 
 /*-----------------------------------*\
   #RESUME
@@ -1600,7 +1613,29 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: left;
   }
 
+  h3.clients-title{
+    padding: 15px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+
+  .clients-item {
+        width: 120px;
+        height: 120px;
+        min-width: 100px;
+        min-height: 100px;  
+        overflow: hidden;
+    }
+
+  .clients-item img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10%;
+    }
+
 }
+
+
 
 
 /**
